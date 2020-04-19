@@ -6,6 +6,8 @@ variable "aws_region" {
   default = "eu-central-1"
 }
 
+variable "jh_password" {}
+
 variable "amis" {
   type = map(string)
   default = {

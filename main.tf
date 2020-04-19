@@ -7,6 +7,7 @@ resource "aws_instance" "jh" {
   user_data = templatefile("script/install.sh", {
     aws_region = var.aws_region
     bucket_name = var.bucket_name
+    password = var.jh_password
   })
 
   tags = {
